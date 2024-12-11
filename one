@@ -1,0 +1,26 @@
+    void addTerm2(X coeff,unsigned order_x,unsigned order_y)
+    {   
+        if (coeff == 0) return;
+        bool found_term = false;
+        typename QList<GTerm>::iterator p;
+        for(p=m_gterms.begin();p!=m_gterms.end();++p)
+        {   
+            GTerm& gterm = *p;
+            if (std::get<1>(gterm) == order_x && std::get<2>(gterm) == order_y )
+            {
+                std::get<0>(gterm) += coeff;
+                found_term = true;
+                break;
+            }
+            else if (std::get<1>(gterm) < order_x || std::get<2>(gterm) < order_y)
+            {
+                m_gterms.insert(p,std::make_tuple(coeff, order_x, order_y));
+                found_term = true;
+                break;
+            }
+        }
+        if (!found_term)
+        {   
+            m_gterms.push_back(std::make_tuple(coeff, order_x, order_y));
+        }
+    }

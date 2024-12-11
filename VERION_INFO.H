@@ -1,0 +1,8 @@
+#ifndef VERION_INFO_H
+#define VERION_INFO_H
+
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 8
+#define VERSION_REVISION "1.0"
+
+#endif // VERION_INFO_H

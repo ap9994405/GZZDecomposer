@@ -1,0 +1,21 @@
+# The fortran modules provided by this target.
+provides
+ accuracy_m.mod
+ big_integer_m.mod
+ bondlist_m.mod
+ database_m.mod
+ decompose_m.mod
+ decompose_print_m.mod
+ getopt_m.mod
+ input_m.mod
+ iso_varying_string.mod
+ lapack.mod
+ operator_m.mod
+ options_m.mod
+ output_m.mod
+ polynomial_m.mod
+ rbtree_key_m.mod
+ rbtree_m.mod
+ structure_m.mod
+ tree_m.mod
+ utils_m.mod
