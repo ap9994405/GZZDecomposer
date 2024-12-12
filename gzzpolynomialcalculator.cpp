@@ -26,7 +26,7 @@ void GZZPolynomialCalculator::run()
 {
     m_process = new QProcess();
 
-    QString zzcalcname = "GZZCalculator";
+    QString zzcalcname = "GZZCalculator.exe";
 
     m_poly.clear();
 
